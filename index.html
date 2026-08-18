@@ -557,7 +557,7 @@
 
       // GAS URLが未設定の場合はエラーを出さずに終了画面へ（要件対応）
       if (!APPS_SCRIPT_URL || APPS_SCRIPT_URL.trim() === "") {
-        console.warn("GAS URLが設定されていません。データは送信されずに終了します。", experimentData);
+        console.warn("https://script.google.com/macros/s/AKfycbylVFxXerV0vAOJs8EX7WFh518K2V1lGZfYxDKIq6_8o75OJ0N_B8qTZMNlyWegFO52/exec", experimentData);
         setTimeout(() => { showScreen('screen-finish'); }, 800);
         return;
       }
