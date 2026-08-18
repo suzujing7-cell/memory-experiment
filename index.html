@@ -244,14 +244,14 @@
     </div>
 
     <div class="form-group">
-      <label class="question-title">2. 最後に食事した時刻（「時」のみ）</label>
+      <label class="question-title">2. 最後に食事をした時刻</label>
       <div class="input-row">
         <input type="number" id="chk-meal" min="0" max="24" step="1"> 時
       </div>
     </div>
 
     <div class="form-group">
-      <label class="question-title">3. 今日の運動</label>
+      <label class="question-title">3. 今日、運動をしましたか？</label>
       <div class="radio-group">
         <label><input type="radio" name="chk-exercise" value="yes"><span>はい</span></label>
         <label><input type="radio" name="chk-exercise" value="no"><span>いいえ</span></label>
@@ -259,7 +259,7 @@
     </div>
 
     <div class="form-group">
-      <label class="question-title">4. 今日のカフェイン摂取</label>
+      <label class="question-title">4. 今日、カフェインを摂取しましたか？</label>
       <div class="radio-group">
         <label><input type="radio" name="chk-caffeine" value="yes"><span>はい</span></label>
         <label><input type="radio" name="chk-caffeine" value="no"><span>いいえ</span></label>
@@ -267,7 +267,7 @@
     </div>
 
     <div class="form-group">
-      <label class="question-title">5. 現在の体調（5が良い）</label>
+      <label class="question-title">5. 現在の体調（5が非常に良い）</label>
       <div class="radio-group">
         <label><input type="radio" name="chk-health" value="1"><span>1</span></label>
         <label><input type="radio" name="chk-health" value="2"><span>2</span></label>
@@ -278,7 +278,7 @@
     </div>
 
     <div class="form-group">
-      <label class="question-title">6. その他（特筆事項があれば）</label>
+      <label class="question-title">6. その他（結果に影響しそうな事項があれば）</label>
       <input type="text" id="chk-other" placeholder="空欄でもよい">
     </div>
 
@@ -291,7 +291,7 @@
   <div id="screen-info" class="screen container">
     <div style="display:flex; flex-direction:column; justify-content:center; min-height:60vh;">
       <p style="font-size: 20px; text-align: center; font-weight: bold;">
-        これから多くのものが写った街中の画像を30秒間出します。
+        これから街中の画像を30秒間出します。出来るだけ何があったか覚えてください。
       </p>
       <button class="btn-primary" onclick="startStimulus()">次へ</button>
     </div>
@@ -350,7 +350,7 @@
     // ==========================================
     // Google Apps ScriptのデプロイURLをここに貼り付けてください。
     // 空欄の場合は送信がスキップされ、UIのみ動作します。
-    const APPS_SCRIPT_URL = "";
+    const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxpekCkzWV0CHjtjo0PptMvKnZ5f-ny6xbO93NH3PaXRs9tU0600x81z6Zlkg5ubt0/exec";
 
     // ==========================================
     // 状態管理
